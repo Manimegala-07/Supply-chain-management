@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Orders - SCM</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1>Orders</h1>
+<form id="createOrderForm">
+    <select id="customerSelect" required></select>
+    <input type="number" id="productId" placeholder="Product ID" required>
+    <input type="number" id="quantity" placeholder="Quantity" required>
+    <button type="submit">Create Order</button>
+</form>
+
+<table id="orderTable">
+    <thead>
+    <tr><th>ID</th><th>Customer</th><th>Total Amount</th><th>Date</th></tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<script src="js/orders.js"></script>
+</body>
+</html>

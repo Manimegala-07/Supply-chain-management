@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Inventory - SCM</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1>Inventory</h1>
+
+<h2>Restock</h2>
+<form id="restockForm">
+  <input type="number" id="restockProductId" placeholder="Product ID" required>
+  <input type="number" id="restockQty" placeholder="Quantity" required>
+  <input type="text" id="restockRemarks" placeholder="Remarks">
+  <button type="submit">Restock</button>
+</form>
+
+<h2>Remove Stock</h2>
+<form id="removeForm">
+  <input type="number" id="removeProductId" placeholder="Product ID" required>
+  <input type="number" id="removeQty" placeholder="Quantity" required>
+  <input type="text" id="removeRemarks" placeholder="Remarks">
+  <button type="submit">Remove</button>
+</form>
+
+<h2>Stock History</h2>
+<table id="historyTable">
+  <thead>
+  <tr><th>ID</th><th>Product</th><th>Quantity</th><th>Action</th><th>Remarks</th><th>Timestamp</th></tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<script src="js/inventory.js"></script>
+</body>
+</html>
